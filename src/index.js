@@ -6,9 +6,9 @@ import { StoreProvider } from './store/index'
 
 ReactDOM.render(
   <React.StrictMode>
-    <StoreProvider>
+    {/* <StoreProvider> */}
       <App />
-    </StoreProvider>
+    {/* </StoreProvider> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
