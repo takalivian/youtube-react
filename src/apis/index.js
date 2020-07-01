@@ -7,7 +7,7 @@ const youtube = axios.create({
 })
 
 export const fetchPopularData = async () =>{
-  return await youtube.get('/video', {
+  return await youtube.get('/videos', {
     params: {
       part: 'snippet',
       maxResults: 40,
