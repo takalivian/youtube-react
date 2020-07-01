@@ -18,7 +18,7 @@ export const Store = createContext({
   setGlobalState: () => null
 })
 
-const StoreProvider = (children) => {
+export const StoreProvider = ({children}) => {
   const [globalState, setGlobalState] = useReducer(reducer, initialState)
   return (
     <Store.Provider value={{ globalState, setGlobalState }}>
@@ -26,5 +26,3 @@ const StoreProvider = (children) => {
     </Store.Provider>
   )
 }
-
-export default StoreProvider
